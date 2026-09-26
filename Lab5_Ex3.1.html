@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Giới Thiệu Cá Nhân - Trần Tường Vy</title>
+    <style>
+      :root {
+        --bg: #f4f7fb;
+        --card: #ffffff;
+        --primary: #1d4ed8;
+        --secondary: #0f172a;
+        --accent: #f59e0b;
+        --text: #1f2937;
+        --muted: #6b7280;
+        --border: #dfe7f3;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #eef5ff, #f8fafc);
+        color: var(--text);
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 24px;
+      }
+
+      .hero {
+        background: linear-gradient(135deg, #eff6ff, #ffffff);
+        border: 1px solid var(--border);
+        border-radius: 22px;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+        padding: 30px 28px;
+        margin-bottom: 28px;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 4vw, 3rem);
+        color: var(--primary);
+      }
+
+      .badge {
+        display: inline-block;
+        background: #dbeafe;
+        color: var(--primary);
+        border-radius: 999px;
+        padding: 8px 16px;
+        font-weight: bold;
+        font-size: 0.9rem;
+      }
+
+      .profile {
+        margin-top: 22px;
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 24px;
+        align-items: center;
+      }
+
+      .info-box {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 22px;
+      }
+
+      .info-box h2 {
+        margin: 0 0 14px;
+        color: var(--secondary);
+        font-size: 1.5rem;
+      }
+
+      .info-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 12px;
+      }
+
+      .info-list li {
+        font-size: 1.05rem;
+        line-height: 1.7;
+        color: var(--text);
+      }
+
+      .info-list strong {
+        color: var(--secondary);
+      }
+
+      .avatar {
+        background: linear-gradient(135deg, #dbeafe, #fef3c7);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        min-height: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5rem;
+        color: var(--primary);
+      }
+
+      .content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+        overflow: hidden;
+      }
+
+      .card h2 {
+        margin: 0;
+        padding: 18px 22px 12px;
+        font-size: 1.35rem;
+        color: var(--secondary);
+      }
+
+      .pdf-wrap,
+      .image-wrap,
+      .video-wrap {
+        padding: 0 18px 18px;
+      }
+
+      .pdf-frame {
+        width: 100%;
+        height: 700px;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        background: #f8fafc;
+      }
+
+      .image-wrap img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        background: #f8fafc;
+      }
+
+      .video-wrap iframe {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        border: 0;
+        border-radius: 12px;
+        background: #000;
+      }
+
+      .footer-note {
+        margin-top: 24px;
+        padding: 16px 20px;
+        border-radius: 12px;
+        background: #eef4ff;
+        border: 1px solid #d8e6ff;
+        color: var(--text);
+        font-size: 0.97rem;
+        line-height: 1.7;
+      }
+
+      @media (max-width: 768px) {
+        .profile {
+          grid-template-columns: 1fr;
+        }
+
+        .pdf-frame {
+          height: 500px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="hero">
+        <div class="header">
+          <h1>Trang Giới Thiệu Cá Nhân</h1>
+          <span class="badge">Sinh viên</span>
+        </div>
+
+        <div class="profile">
+          <div class="info-box">
+            <h2>Thông tin cá nhân</h2>
+            <ul class="info-list">
+              <li><strong>Họ tên:</strong> Trần Tường Vy</li>
+              <li><strong>MSSV:</strong> B2605323</li>
+              <li><strong>Lớp:</strong> 01</li>
+            </ul>
+          </div>
+
+          <div class="avatar" aria-label="Avatar">👩‍🎓</div>
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="card">
+          <h2>1. File PDF</h2>
+          <div class="pdf-wrap">
+            <object
+              class="pdf-frame"
+              data="Lab05_Ex1.2.pdf"
+              type="application/pdf"
+              aria-label="File PDF của Trần Tường Vy"
+            >
+              <p>
+                Trình duyệt của bạn không hỗ trợ xem PDF trực tiếp. Bạn có thể
+                <a href="Lab05_Ex1.2.pdf" target="_blank" rel="noopener">tải file PDF</a>
+                ở đây.
+              </p>
+            </object>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>2. Ảnh Infographic</h2>
+          <div class="image-wrap">
+            <img src="Lab05_Ex2.1.png" alt="Infographic cá nhân của Trần Tường Vy" />
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>3. Video YouTube</h2>
+          <div class="video-wrap">
+            <iframe
+              src="https://www.youtube.com/embed/0G9twriJd2A?si=koYoIRMt7iibXl3E"
+              title="Video YouTube giới thiệu"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+      </main>
+
+      <div class="footer-note">
+        <strong>Lưu ý:</strong> Trang này được xây dựng để giới thiệu thông tin
+        cá nhân và trình bày đầy đủ các sản phẩm đã hoàn thành trong bài tập Lab
+        05, bao gồm PDF, infographic và video YouTube.
+      </div>
+    </div>
+  </body>
+</html>
