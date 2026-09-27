@@ -2,7 +2,7 @@
 
 **Họ và tên:** Trần Tường Vy  
 **MSSV:** B2605323  
-**Lớp:** 01  
+**Lớp:** D03  
 
 ## Danh sách sản phẩm thực hành
 1. **Lab05_Ex1.2.pdf**: File tài liệu tổng hợp đã xuất định dạng PDF.
